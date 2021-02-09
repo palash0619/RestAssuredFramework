@@ -1,0 +1,200 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-09T11:28:21.093Z",
+        "line": 11,
+        "name": "Validate Add PLace API",
+        "description": "",
+        "id": "place-api-validations;validate-add-place-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 622000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add place payload \"Palash\" \"English\" \"kolkata\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Palash\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"English\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"kolkata\"",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDefinitions.PlaceValidation_StepDefinition.add_place_payload(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1508000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"addPlaceApi\" with \"Post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPlaceApi\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.PlaceValidation_StepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Validate Statuscode 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinitions.PlaceValidation_StepDefinition.validate_statuscode(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 270000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Status is OK",
+            "match": {
+              "location": "stepDefinitions.PlaceValidation_StepDefinition.status_is_ok()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Addplace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-09T11:28:23.551Z",
+        "line": 12,
+        "name": "Validate Add PLace API",
+        "description": "",
+        "id": "place-api-validations;validate-add-place-api;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add place payload \"Poulami\" \"Bengali\" \"Kolkata\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Poulami\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Bengali\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"Kolkata\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinitions.PlaceValidation_StepDefinition.add_place_payload(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 246000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"addPlaceApi\" with \"Post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPlaceApi\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.PlaceValidation_StepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Validate Statuscode 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinitions.PlaceValidation_StepDefinition.validate_statuscode(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Status is OK",
+            "match": {
+              "location": "stepDefinitions.PlaceValidation_StepDefinition.status_is_ok()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Addplace"
+          }
+        ]
+      }
+    ],
+    "name": "Place API validations",
+    "description": "",
+    "id": "place-api-validations",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/PlaceValidationApi.feature",
+    "tags": []
+  }
+]
